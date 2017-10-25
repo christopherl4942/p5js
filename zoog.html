@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+        function setup() {
+            createCanvas(800,600); 
+            background(150,0,0)
+        }
+
+        function draw()   {                                                                           
+        strokeWeight(3);
+        //head
+        ellipse(390,200,220,220);
+       //eyes
+        ellipse(330,180,40,40);
+        ellipse(450,180,40,40);
+        strokeWeight(30)
+        point(330,180)
+        strokeWeight(30)
+        point(450,180)  
+         //Body
+        rect(290,300,200,300);  
+        //mouth
+            strokeWeight(5)
+p1 = {x: 300, y: 240}, p2 = {x: 300, y: 240}
+p3 = {x: 440, y: 240}, p4 = {x: 440, y: 240}
+curve(p1.x, p1.y, p1.x, p1.y, p2.x, p2.y, p3.x, p3.y)
+curve(p1.x, p1.y, p2.x, p2.y, p3.x, p3.y, p4.x, p4.y)
+curve(p2.x, p2.y, p3.x, p3.y, p4.x, p4.y, p4.x, p4.y)
+    //tooth
+    rect(350,240,25,25)        
+ //arms
+ strokeWeight(10)
+ line(200,200,300,400)
+ line (600,200,500,400)
+       
+   textSize(10)    
+       text("yo")
+               }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/christopherl4942/p5js/blob/gh-pages/zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+
+</html>
